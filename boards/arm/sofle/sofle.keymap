@@ -36,9 +36,9 @@
 &kp ESCAPE          &kp N1              &kp N2              &kp N3          &kp N4      &kp N5                                  &kp NUMBER_6        &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0    &kp MINUS
 &kp TAB             &kp Q               &kp W               &kp E           &kp R       &kp T                                   &kp Y               &kp U           &kp I         &kp O             &kp P           &kp EQUAL
 &kp CAPSLOCK        &kp A               &kp S               &kp D           &kp F       &kp G                                   &kp H               &kp J           &kp K         &kp L             &kp LBKT        &kp RBKT
-&kp LSHFT           &kp LCTRL           &kp Z               &kp X           &kp C       &kp V       &kp C_PLAY_PAUSE &trans     &kp B               &kp N           &kp M         &kp COMMA         &kp PERIOD      &kp BACKSPACE
+&kp LSHFT           &kp LCTRL           &kp Z               &kp X           &kp C       &kp V       &trans &kp C_PLAY_PAUSE     &kp B               &kp N           &kp M         &kp COMMA         &kp PERIOD      &kp BACKSPACE
                     &kp LEFT_GUI        &kp LEFT_ALT        &to 1           &kp SPACE   &kp ENTER                               &kp ENTER           &kp SPACE       &to 2         &kp RSHIFT        &kp DELETE
-                    &kp UP_ARROW        &kp LEFT_ARROW      &kp RIGHT_ARROW &kp DOWN_ARROW                                      &trans              &trans          &trans      &trans
+                    &kp UP_ARROW        &kp LEFT_ARROW      &kp RIGHT_ARROW &kp DOWN_ARROW                                      &kp C_VOL_UP        &trans          &kp C_VOL_DN      &trans
             >;
 
             display-name = "Qwery";
@@ -47,9 +47,9 @@
         Navi {
             bindings = <
 &kp GRAVE           &kp F1              &kp F2              &kp F3          &kp F4      &kp F5                  &kp F6              &kp F7          &kp F8         &kp F9           &kp F10             &trans
-&trans              &trans              &trans              &trans          &trans      &trans                  &kp PG_UP           &kp END         &kp UP         &kp HOME         &kp MINUS           &kp EQUAL
-&trans              &trans              &trans              &trans          &trans      &trans                  &kp PG_DN           &kp LEFT        &kp DOWN       &kp RIGHT        &kp LEFT_BRACKET    &kp RIGHT_BRACKET
-&trans              &kp N1              &kp N2              &kp N3          &trans      &trans &trans &mkp LCLK &rgb_ug RGB_BRI     &rgb_ug RGB_BRD &trans         &trans           &kp F11             &kp F12
+&trans              &kp N7              &kp N8              &kp N9          &trans      &trans                  &kp PG_UP           &trans          &trans         &kp HOME         &kp MINUS           &kp EQUAL
+&trans              &kp N4              &kp N5              &kp N6          &trans      &trans                  &kp PG_DN           &trans          &kp UP         &kp END          &kp LEFT_BRACKET    &kp RIGHT_BRACKET
+&trans              &kp N1              &kp N2              &kp N3          &trans      &trans &trans &mkp LCLK &trans              &kp LEFT        &kp DOWN       &kp RIGHT        &kp F11             &kp F12
                     &trans              &trans              &to 2           &trans      &trans                  &trans              &trans          &to 0          &trans           &trans
                     &trans              &trans              &trans          &trans                              &mmv MOVE_UP        &mmv MOVE_LEFT  &mmv MOVE_RIGHT  &mmv MOVE_DOWN
             >;
@@ -59,12 +59,12 @@
 
         Mouse {
             bindings = <
-&trans                   &bt BT_SEL 0        &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4      &trans                  &trans           &trans          &trans         &trans              &trans 
-&trans                      &trans              &trans              &bt BT_CLR    &bt BT_CLR_ALL &trans         &trans                  &trans           &trans          &trans         &trans              &trans
-&rgb_ug RGB_BRI             &sys_reset          &soft_off           &bootloader     &trans      &trans          &trans                  &trans           &trans          &trans         &trans              &trans
-&rgb_ug RGB_BRD   &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_EFR &rgb_ug RGB_SPI   &rgb_ug RGB_SPD         &trans  &trans &trans   &trans           &trans         &trans          &trans             &trans
-                    &trans              &trans              &to 0           &trans      &trans                  &trans                  &trans           &to 1           &trans         &trans
-                    &trans              &trans              &trans          &trans                                                      &trans           &trans           &trans          &trans
+&trans                   &bt BT_SEL 0        &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &trans                  &trans           &trans         &trans         &trans              &trans 
+&trans                   &trans              &trans             &bt BT_CLR      &bt BT_CLR_ALL  &trans          &trans                  &trans           &trans         &trans         &trans              &trans
+&rgb_ug RGB_BRI          &sys_reset          &soft_off          &bootloader     &trans          &trans          &trans                  &trans           &trans         &trans         &trans              &trans
+&rgb_ug RGB_BRD   &rgb_ug RGB_TOG    &rgb_ug RGB_EFF  &rgb_ug RGB_EFR &rgb_ug RGB_SPI       &rgb_ug RGB_SPD     &trans  &trans &trans   &trans           &trans         &trans         &trans             &trans
+                    &trans              &trans              &to 0           &trans      &trans                  &trans                  &trans           &to 1          &trans         &trans
+                    &trans              &trans              &trans          &trans                                                      &trans           &trans         &trans         &trans
             >;
 
             display-name = "Mouse";
