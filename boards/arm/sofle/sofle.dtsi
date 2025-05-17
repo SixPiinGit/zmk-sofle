@@ -166,7 +166,7 @@ zephyr_udc0: &usbd {
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <7>; /* 6 keys have underglow at the moment */
+        chain-length = <29>; /* the number of RGB underglow */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
