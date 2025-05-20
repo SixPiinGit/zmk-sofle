@@ -15,7 +15,7 @@ source .venv/bin/activate
 cd ./app
 
 #left_studio
-west build -p -d ../zmk-sofle/build/left_studio -b sofle_left -- -DSHIELD=nice_view \
+west build -p -d ../zmk-sofle/build/left_studio -b sofle_left -S studio-rpc-usb-uart -- -DSHIELD=nice_view \
 -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DZMK_EXTRA_MODULES="../zmk-sofle"
 
 

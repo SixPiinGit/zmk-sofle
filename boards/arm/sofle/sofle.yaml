@@ -1,6 +1,6 @@
 identifier: sofle
 name: Solfe
-url: https://github.com/tokyo2006/zmk-config-sofle
+url: https://github.com/SixPiinGit/zmk-sofle
 type: mcu
 arch: arm
 toolchain:
