@@ -20,10 +20,10 @@
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &sofle_layout;
+        zmk,battery = &vbatt;
         zephyr,console = &cdc_acm_uart;
         zmk,underglow = &led_strip;
-        zmk,battery = &vbatt;
+        zmk,physical-layout = &sofle_layout;
         zmk,backlight = &backlight;
     };
 
@@ -82,10 +82,6 @@
     cdc_acm_uart: cdc_acm_uart {
         compatible = "zephyr,cdc-acm-uart";
     };
-};
-
-zephyr_udc0: &usbd {
-    status = "okay";
 };
 
 &flash0 {
@@ -197,6 +193,11 @@ zephyr_udc0: &usbd {
     pinctrl-0 = <&pwm0_default>;
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
+};
+
+zephyr_udc0: &usbd {
+    compatible = "nordic,nrf-usbd";
+    status = "okay";
 };
 
 nice_view_spi: &spi0 {

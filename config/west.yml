@@ -13,4 +13,4 @@ manifest:
       remote: gpeye
       revision: main 
   self:
-    path: config
+    path: boards
