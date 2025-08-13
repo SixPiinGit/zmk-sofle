@@ -12,5 +12,8 @@ manifest:
     - name: hammerbeam-slideshow
       remote: gpeye
       revision: main 
+    - name: zmk-a320-driver
+      remote: zmkfirmware
+      revision: main 
   self:
     path: boards
